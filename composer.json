@@ -1,0 +1,13 @@
+{
+  "name": "7sg/rocketchat-webhook",
+  "description": "",
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^6.5"
+  },
+  "autoload": {
+    "psr-0": {
+      "Seven": "src/"
+    }
+  }
+}
