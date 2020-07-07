@@ -9,6 +9,9 @@ composer require 7sg/rocketchat-webhook
 
 ## Usage
 ```php
+use Seven\RocketChatWebHook\Message as RocketChatMessage;
+use Seven\RocketChatWebHook\RocketChat;
+
 RocketChat::setEndPoint('https:/rocketchat.url');
 
 $message = new RocketChatMessage('Hello!');
