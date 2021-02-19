@@ -73,7 +73,7 @@ class Message
      */
     public function addAttachment(Attachment $attachment)
     {
-        $this->attachments[] = (array)$attachment;
+        $this->attachments[] = $attachment->toArray();
     }
 
     /**

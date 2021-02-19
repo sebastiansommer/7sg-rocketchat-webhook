@@ -87,4 +87,20 @@ class Attachment
      * @var array
      */
     public $fields;
+
+    /**
+     * @return array
+     */
+    public function toArray(): array
+    {
+        $array = [];
+        
+        foreach (get_object_vars($this) as $fieldName => $value) {
+            if ($value !== NULL) {
+                $array[$fieldName] = $value;
+            }
+        }
+
+        return $array;
+    }
 }
